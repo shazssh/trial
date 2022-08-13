@@ -381,7 +381,7 @@ import java.util.Scanner;
 		//
 		public static double PiByRamanujan(){		// class Method PiByRamanujan() －πの近似値（Ramanujanによる)			
 				double pi0 = 0;
-				for (int n = 0; n < 2; n++ ) {		//　近似精度が高く収束が極めて速いが工夫をしないとコンピュータでは活かしきれない
+				for (int n = 0; n < 2; n++ ) {		//　近似精度が高く収束が極めて速い
 					pi0 += (ftr(4L * n) * (1103 + 26390L * n))/power((double)(power(4, n) * power(99, n) * ftr((long)n)), 4);
 				}
 				double pi1 = (2 * sqr(2) / power(99, 2)) * pi0;
